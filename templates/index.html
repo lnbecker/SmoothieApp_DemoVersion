@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="../static/stylesheets/styles2.css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">      
+    </head>
+    
+    <body>
+        <img src="./static/smoothieBannerPale-01.png" id="banner">
+        <div id='sidenav'></div>
+        <div id='viewButton'>
+            <a href='#' id="viewGroceryListLink" onclick='viewGroceryList()'>View Grocery List</a>
+        </div><br>
+        <div id='recipeDiv'>
+            <img src="./static/getStarted.png" id="getStarted">
+        </div>
+        <div id="groceryList">
+            <h3>Grocery List:</h3><br>
+            <p id="emptyMessage">Your grocery list is empty. Add Smoothie recipes to automatically calculate your list! </p>
+            <div id="groceryDiv"></div>
+        </div>
+    </body>
+
+    <script type="text/javascript" src="../static/controllers/populatePage.js"></script>
+    
+</html>
+

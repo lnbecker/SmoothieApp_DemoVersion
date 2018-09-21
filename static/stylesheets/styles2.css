@@ -1,0 +1,154 @@
+#viewButton{
+    float: right;
+    position: inline-block;
+}
+
+#getStarted{
+    width: 30%;
+}
+
+.hide{
+    display: none;
+    visibility: hidden;
+}
+
+#banner{
+    height: 200px;
+    width: 100%;
+}
+
+#sidenav{
+    float: left;
+    position: inline-block;
+    background-color: #f1f1f1;
+}
+
+#recipeDiv{
+    position: inline-block;
+    clear:right;
+    text-align: center;
+}
+
+
+#groceryList{
+    padding-left:20px;
+    visibility: hidden;
+    display: none;
+    position: inline-block;
+    clear: right;
+    width: 50%;
+}
+
+.addBtn {
+    background-color: #BFCFA2; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.addBtn {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #BFCFA2;
+}
+
+.addBtn:hover {
+    background-color: #BFCFA2;
+    color: white;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+
+a{
+    text-decoration: none;
+    color: #4c4a4a;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0;
+}
+
+.lastClicked{
+    color: #ccc8c8;
+}
+
+/* On mouse-over */
+a:hover{
+    color: #ccc8c8;
+} 
+.dropdown-btn:hover {
+    background-color: #BFCFA2;
+    color: white;
+}
+
+/* Main content */
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+    background-color: #BFCFA2;
+    color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
